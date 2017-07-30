@@ -21,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/mitchmyburgh/super-simple-react-router/issues"
   },
-  "homepage": "https://github.com/mitchmyburgh/super-simple-react-router#readme"
+  "homepage": "https://github.com/mitchmyburgh/super-simple-react-router#readme",
+  "dependencies": {
+    "history": "4.6.3",
+    "url-match": "0.1.0"
+  }
 }
