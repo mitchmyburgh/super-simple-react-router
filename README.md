@@ -7,6 +7,9 @@ npm i super-simple-react-router
 ```
 
 # Example
+
+Checkout the demo repo at: [https://github.com/mitchmyburgh/super-simple-react-router-demo](https://github.com/mitchmyburgh/super-simple-react-router-demo)
+
 ```JavaScript
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
