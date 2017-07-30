@@ -12,7 +12,7 @@ export default class Router extends Component {
   static propTypes = {
     parents: PropTypes.object.isRequired,
     routes: PropTypes.array.isRequired
-  };
+  }
 
   static childContextTypes = {
     redirect: PropTypes.func.isRequired,
