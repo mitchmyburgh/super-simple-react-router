@@ -5,7 +5,7 @@ class Link extends Component {
 
   static contextTypes = {
     redirect: PropTypes.func.isRequired
-  };
+  }
 
   static propTypes = {
     to: PropTypes.oneOfType([
