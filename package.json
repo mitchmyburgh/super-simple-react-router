@@ -24,6 +24,8 @@
   "homepage": "https://github.com/mitchmyburgh/super-simple-react-router#readme",
   "dependencies": {
     "history": "4.6.3",
+    "prop-types": "15.5.10",
+    "react": "15.6.1",
     "url-match": "0.1.0"
   }
 }
