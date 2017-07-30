@@ -1,0 +1,25 @@
+{
+  "name": "super-simple-react-router",
+  "version": "1.0.0",
+  "description": "A simple, yet powerful router for react.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitchmyburgh/super-simple-react-router.git"
+  },
+  "keywords": [
+    "react",
+    "router",
+    "simple",
+    "jsx"
+  ],
+  "author": "Mitch Mybrugh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mitchmyburgh/super-simple-react-router/issues"
+  },
+  "homepage": "https://github.com/mitchmyburgh/super-simple-react-router#readme"
+}
