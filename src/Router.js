@@ -138,6 +138,7 @@ export default class Router extends Component {
         )
       })
     }
+    const redir = this.redirect.bind(this)
     return (
       <div className="router">
         {
@@ -146,7 +147,7 @@ export default class Router extends Component {
               pathProps,
               key,
               pathname,
-              redirect: this.redirect.bind(this)
+              redirect: redir
             }}/>
         }
         {
@@ -155,7 +156,7 @@ export default class Router extends Component {
               pathProps,
               key,
               pathname,
-              redirect: this.redirect.bind(this)
+              redirect: redir
             }}/>
         }
         {
@@ -164,7 +165,7 @@ export default class Router extends Component {
               pathProps,
               key,
               pathname,
-              redirect: this.redirect.bind(this)
+              redirect: redir
             }}/>
         }
         {
@@ -173,7 +174,7 @@ export default class Router extends Component {
               pathProps,
               key,
               pathname,
-              redirect: this.redirect.bind(this)
+              redirect: redir
             }}/>
         }
         {
@@ -185,7 +186,7 @@ export default class Router extends Component {
               pathProps,
               key,
               pathname,
-              redirect: this.redirect.bind(this)
+              redirect: redir
             }}/>
         }
       </div>
