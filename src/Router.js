@@ -132,7 +132,7 @@ export default class Router extends Component {
               pathProps,
               key,
               pathname,
-              redirect: this.redirect,
+              redirect: this.redirect.bind(this),
             }}
             key={`OTHERCOMPONENT_${i}`}/>
         )
@@ -146,7 +146,7 @@ export default class Router extends Component {
               pathProps,
               key,
               pathname,
-              redirect: this.redirect
+              redirect: this.redirect.bind(this)
             }}/>
         }
         {
@@ -155,7 +155,7 @@ export default class Router extends Component {
               pathProps,
               key,
               pathname,
-              redirect: this.redirect
+              redirect: this.redirect.bind(this)
             }}/>
         }
         {
@@ -164,7 +164,7 @@ export default class Router extends Component {
               pathProps,
               key,
               pathname,
-              redirect: this.redirect
+              redirect: this.redirect.bind(this)
             }}/>
         }
         {
@@ -173,7 +173,7 @@ export default class Router extends Component {
               pathProps,
               key,
               pathname,
-              redirect: this.redirect
+              redirect: this.redirect.bind(this)
             }}/>
         }
         {
@@ -185,7 +185,7 @@ export default class Router extends Component {
               pathProps,
               key,
               pathname,
-              redirect: this.redirect
+              redirect: this.redirect.bind(this)
             }}/>
         }
       </div>
