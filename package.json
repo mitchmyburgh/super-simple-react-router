@@ -1,6 +1,6 @@
 {
   "name": "super-simple-react-router",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "A simple, yet powerful router for react.",
   "main": "build/index.js",
   "files": [
