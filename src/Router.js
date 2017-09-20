@@ -98,11 +98,11 @@ export default class Router extends Component {
             return null;
           }
         }
-        this.setState({router: {pathProps: pathProps, key: i, pathname}});
+        this.setState({router: {pathProps: pathProps, key: i, pathname, redirect: this.redirect.bind(this)}});
         return true;
       }
     }
-    this.setState({router: {pathProps: {}, key: -1, pathname}});
+    this.setState({router: {pathProps: {}, key: -1, pathname, redirect: this.redirect.bind(this)}});
     return false;
   }
 
@@ -115,7 +115,7 @@ export default class Router extends Component {
     this.forceUpdate();
   }
   render() {
-    let {pathProps, key, pathname} = this.state.router;
+    let {pathProps, key, pathname, redirect} = this.state.router;
     if (key === -1 && this.state.catchall){
       var {components, props} = this.state.catchall;
     } else if (key === -1) {
@@ -132,13 +132,12 @@ export default class Router extends Component {
               pathProps,
               key,
               pathname,
-              redirect: this.redirect.bind(this),
+              redirect
             }}
             key={`OTHERCOMPONENT_${i}`}/>
         )
       })
     }
-    const redir = this.redirect.bind(this)
     return (
       <div className="router">
         {
@@ -147,7 +146,7 @@ export default class Router extends Component {
               pathProps,
               key,
               pathname,
-              redirect: redir
+              redirect
             }}/>
         }
         {
@@ -156,7 +155,7 @@ export default class Router extends Component {
               pathProps,
               key,
               pathname,
-              redirect: redir
+              redirect
             }}/>
         }
         {
@@ -165,7 +164,7 @@ export default class Router extends Component {
               pathProps,
               key,
               pathname,
-              redirect: redir
+              redirect
             }}/>
         }
         {
@@ -174,7 +173,7 @@ export default class Router extends Component {
               pathProps,
               key,
               pathname,
-              redirect: redir
+              redirect
             }}/>
         }
         {
