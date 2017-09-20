@@ -185,7 +185,7 @@ export default class Router extends Component {
               pathProps,
               key,
               pathname,
-              redirect: redir
+              redirect
             }}/>
         }
       </div>
